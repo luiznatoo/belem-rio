@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face{
+    font-family: primeira nova;
+    src: url(font/PRI-BOLD.otf) ;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-primeira: #343434;
+    --cor-segunda: #10334F;
+    --cor-terceira: #fff;
+    --font-primeira: "Montserrat", sans-serif;
+}
+body{
+    background-color: var(--cor-segunda);
+}
+nav{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 135px;
+    padding-right: 135px;
+    align-items: center;
+    background-color: var(--cor-terceira);
+    
+}
+nav div{
+    padding: 10px;
+}
+nav img{
+    max-width: 120px;
+
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 1rem;
+    
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--cor-primeira);
+    font-weight: 600;
+    font-family: var(--font-primeira);
+    text-transform: uppercase;
+    
+  
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding-right: 135px;
+    padding-left: 135px;
+
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+header div h1{
+    max-width: 850px;
+    font-family: var(--font-primeira);
+    font-weight: 900;
+    font-size: 2rem;
+
+    color: var(--cor-terceira);
+    
+}
+header div p{
+    max-width: 750px;
+    font-size: 1rem;
+    font-family: var(--font-primeira);
+    font-weight: 400;
+    color: var(--cor-terceira);
+    line-height: 1.8rem;
+}
+header div a{
+    text-decoration: none;
+    color: var(--cor-primeira);
+    background-color: var(--cor-terceira);
+    max-width: 250px;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: var(--font-primeira);
+    font-weight: 700;
+}
+.mapa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 100px 0;
+}
+.mapa-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 135px;
+    padding-right: 135px;
+    width: 100%;
+
+}
+.mapa-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.mapa-conteudo h2{
+    font-size: 2rem;
+    color: var(--cor-terceira);
+    font-family: var(--font-primeira);
+    font-weight: 800;
+    font-style: normal;
+    max-width: 600px;
+}
+.mapa-conteudo p{
+    max-width: 600px;
+    color: var(--cor-terceira);
+    font-weight: 400;
+    font-family: var(--font-primeira);
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.8rem;
+
+}

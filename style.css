@@ -10,9 +10,7 @@
     --font-paragrafo: "Inter", sans-serif;
     --font-titulo: "Sora", sans-serif
 }
-body{
-    
-}
+
 
 nav{
     padding: 10px 0 10px 0;
@@ -85,9 +83,7 @@ nav .container .container-img img{
     object-position: top;
     z-index: -1;
 }
-header{
-    
-}
+
 header section{
     display: flex;
     justify-content: center;
@@ -95,7 +91,7 @@ header section{
     height: 90vh;
 }
 header section .container-headline{
-    width: 90%;
+    width: 75%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -107,7 +103,7 @@ header section .container-headline h1{
     text-align: center;
     font-family: var(--font-titulo);
     font-weight: 400;
-    max-width: 85%;
+    
 }
 header section .container-headline h1 span{
     font-weight: 700;
@@ -135,4 +131,74 @@ header section .container-headline a{
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
+}
+
+
+.mapa{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.mapa-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    width: 75%;
+}
+
+.mapa-conteudo{
+    margin-bottom: 10rem;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.mapa-conteudo h2{
+    font-family: var(--font-titulo);
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.mapa-conteudo p{
+    font-family: var(--font-paragrafo);
+    font-size: 18px;
+    font-weight: 200;
+    width: 712px;
+}
+.mapa-mapa img{
+    width: 254px;
+}
+.container-cart{
+    display: flex;
+    justify-content: center;
+
+}
+.container-cart .cart{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    padding: 50px 0 100px 0;
+    
+}
+.container-cart .cart .cart-item{
+    background: var(--cor-20);
+    color: var(--cor-70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;  
+    width: 300px;
+    height: 250px;
+    border-radius: 30px;
+    border: 1px solid #7B7B7B;
+    
+}
+.container-cart .cart .cart-item h2{
+    font-family: var(--font-titulo);
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 24px;
 }

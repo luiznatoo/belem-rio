@@ -145,6 +145,8 @@ header section .container-headline a{
     align-items: center;
     justify-content: space-between  ;
     width: 75%;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .mapa-conteudo{
@@ -239,4 +241,61 @@ header section .container-headline a{
 }
 .container-carr .carr{
     width: 75%;
+
+.news{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
 }
+
+.news-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-titulo);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.news-news{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 5rem 10rem
+}
+
+.news-conteiner{
+    display: flex;
+    flex-direction: column;
+    background-color: #212329;
+    border-radius: 12px;
+    
+}
+
+.cover img{
+    width: 20em;
+}
+
+.news-content{
+    width: 20rem;
+    padding: 15px;
+    
+}
+
+.news-content h2{
+    font-family: var(--font-titulo);
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+}
+}
+.news-content p{
+    font-family: var(--font-paragrafo);
+    font-size: 12px;
+    font-weight: 200;
+    width: 100%;
+    text-align: left;
+    color: #ffffff;
+    background-color: #212329;}

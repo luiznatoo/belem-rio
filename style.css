@@ -144,7 +144,7 @@ header section .container-headline a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 75%;
 }
 
 .mapa-conteudo {

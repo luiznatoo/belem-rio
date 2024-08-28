@@ -10,9 +10,7 @@
     --font-paragrafo: "Inter", sans-serif;
     --font-titulo: "Sora", sans-serif
 }
-body{
-    
-}
+
 
 nav{
     padding: 10px 0 10px 0;
@@ -85,9 +83,7 @@ nav .container .container-img img{
     object-position: top;
     z-index: -1;
 }
-header{
-    
-}
+
 header section{
     display: flex;
     justify-content: center;
@@ -135,4 +131,41 @@ header section .container-headline a{
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
+}
+
+
+.mapa{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.mapa-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.mapa-conteudo{
+    margin-bottom: 10rem;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.mapa-conteudo h2{
+    font-family: var(--font-titulo);
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.mapa-conteudo p{
+    font-family: var(--font-paragrafo);
+    font-size: 18px;
+    font-weight: 200;
+    width: 712px;
+}
+.mapa-mapa img{
+    width: 254px;
 }

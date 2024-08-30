@@ -462,8 +462,7 @@ footer p{
     .sobre-container{
         flex-direction: column;
     }
-    .sobre-img{
-    }
+   
     .sobre-conteudo{
         padding: 40px 0;
     }
@@ -484,9 +483,6 @@ footer p{
     .news h2{
         font-size: 32px;
     }
-    .word-container{
-        
-    }
     .word-container h2{
         text-align: center;
     }
@@ -497,8 +493,98 @@ footer p{
         text-align: center;
     }
 }
+/* responsividade para mobile*/
+
 @media(max-width: 500px){
     nav{
         display: none;
     }
+
+    header section .container-headline h1{
+        font-size: 28px;
+        
+    }
+
+    header section .container-headline p{
+        font-size: 14px;
+        max-width: 384px;
+    }
+
+    header section .container-headline a{
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+
+    .container-cart .cart .cart-item{
+        width: 265px;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .container-cart .cart {
+        gap: 0;
+        background-color: var(--cor-20);
+        border-radius: 12px;
+    }
+
+    .container-cart {
+        padding: 40px  ;
+    }
+
+    .mapa-conteudo{
+        width: 367px;
+        
+    }
+
+    .mapa-mapa img{
+        width: 213px;
+    }
+
+    .mapa-conteudo h2{
+        font-size: 28px;
+        
+    }
+
+    .mapa-conteudo p{
+        font-size: 17.17px;
+        text-align: left;
+    }
+
+   
+    .sobre-conteudo{
+        width: 350px;
+        border-radius: 0 0 25px;
+    }
+
+    .sobre h2{
+        font-size: 29px;
+        text-align: left;
+    }
+
+    .sobre-conteudo h3{
+        font-size: 25px;
+        text-align: left;
+       
+    }
+
+    .conteudo-container{
+        display: flex;
+        gap: 10px;
+    }
+    .sobre-conteudo p{
+        font-size: 15px;
+        text-align: left;
+        width: 300px;
+    }
+
+    .sobre-conteudo a{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .sobre-img img{
+        width: 350px;
+        border-radius: 0px 25px 0px 0;
+    }
+    
 }

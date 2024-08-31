@@ -586,5 +586,46 @@ footer p{
         width: 350px;
         border-radius: 0px 25px 0px 0;
     }
+
+    
+
+    .news h2 {
+        font-size: 29px;
+    }
+
+    .news-conteiner{
+        width: 15rem;
+        height: 24rem;
+        
+    }
+
+    .news-content{
+        padding: 22px 15px;
+    }
+
+    .cover img{
+        width: 15rem;
+    }
+
+    .news-content h3{
+        font-size: 19px;
+    }
+
+    .news-content p{
+        font-size: 14px;
+        width: 13rem;
+    }
+   
+    .word-container h2{
+        font-size: 30px;
+    }
+
+    .word-container p{
+        font-size: 14px
+    }
+
+    footer p {
+        font-size: 10px
+    }
     
 }

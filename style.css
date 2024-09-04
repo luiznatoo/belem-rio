@@ -221,12 +221,6 @@ header section .container-headline a {
     text-align: center;
 }
 
-.swiper {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 .swiper-slide {
     text-align: center;
@@ -235,17 +229,19 @@ header section .container-headline a {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 30% !important;
 }
 
 .swiper-slide img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
+
 .container-carr {
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .container-carr h2 {
@@ -256,10 +252,23 @@ header section .container-headline a {
     margin: 20px 0;
 }
 
-.container-carr .carr {
-    width: 75%;
-}
+@media (max-width: 568px) {
+    .swiper {
+        padding: 0; /* Remover o padding para aproveitar melhor o espaço em telas pequenas */
+    }
 
+    .swiper-slide {
+        min-width: 90% /* Aumentar o tamanho mínimo das slides em telas menores */
+    }
+
+    .container-carr {
+        padding: 20px 0; /* Diminuir o padding para telas menores */
+    }
+
+    .container-carr h2 {
+        font-size: 36px; /* Diminuir o tamanho da fonte em telas menores */
+    }
+}
 .news {
     display: flex;
     justify-content: center;
@@ -453,7 +462,7 @@ footer p{
     }
     .mapa-conteudo p{
         font-size: 16px;
-        text-align: center;
+        text-align: center !important;
         max-width: 500px;
     }
     .mapa-mapa{
@@ -465,15 +474,20 @@ footer p{
    
     .sobre-conteudo{
         padding: 40px 0;
+        width: 100% !important;
+    }
+    .sobre-img img{
+        width: 100% !important;
     }
     .sobre h2{
         font-size: 32px;
     }
-    .swiper{
-        width: 100%;
-    }
     .swiper h2{
         font-size: 32px;
+        text-align: center;
+        max-width: 90%;
+        margin: 40px auto;
+        
     }
     .news-news{
         flex-direction: column;
@@ -499,6 +513,9 @@ footer p{
     nav{
         display: none;
     }
+    header section .container-headline{
+        width: 90% !important;
+    }
 
     header section .container-headline h1{
         font-size: 28px;
@@ -507,32 +524,35 @@ footer p{
 
     header section .container-headline p{
         font-size: 14px;
-        max-width: 384px;
+        max-width: 400px;
     }
 
     header section .container-headline a{
         font-size: 14px;
-        padding: 10px 30px;
+        padding: 15px 80px;
     }
 
     .container-cart .cart .cart-item{
         width: 265px;
-        border: 0;
-        border-radius: 0;
+        padding: 120px !important;
+
     }
 
     .container-cart .cart {
-        gap: 0;
-        background-color: var(--cor-20);
+
         border-radius: 12px;
     }
 
     .container-cart {
-        padding: 40px  ;
+       
+    }
+    .mapa-container{
+        width: 90%;
     }
 
+
     .mapa-conteudo{
-        width: 367px;
+        max-width: 100%;
         
     }
 
@@ -585,6 +605,47 @@ footer p{
     .sobre-img img{
         width: 350px;
         border-radius: 0px 25px 0px 0;
+    }
+
+    
+
+    .news h2 {
+        font-size: 29px;
+    }
+
+    .news-conteiner{
+        width: 15rem;
+        height: 24rem;
+        
+    }
+
+    .news-content{
+        padding: 22px 15px;
+    }
+
+    .cover img{
+        width: 15rem;
+    }
+
+    .news-content h3{
+        font-size: 19px;
+    }
+
+    .news-content p{
+        font-size: 14px;
+        width: 13rem;
+    }
+   
+    .word-container h2{
+        font-size: 30px;
+    }
+
+    .word-container p{
+        font-size: 14px
+    }
+
+    footer p {
+        font-size: 10px
     }
     
 }
